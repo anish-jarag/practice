@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--    Program 1-->
+<!--<LinearLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:gravity="center"-->
+<!--    android:orientation="vertical">-->
+<!--    <Button-->
+<!--        android:id="@+id/btnOpen"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Open Second Activity" />-->
+<!--</LinearLayout>-->
+
+
+<!--    Program 2-->
+<!--<LinearLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:gravity="center"-->
+<!--    android:orientation="horizontal">-->
+
+<!--    <FrameLayout-->
+<!--        android:id="@+id/fragmentContainer1"-->
+<!--        android:layout_weight="1"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_width="0dp"-->
+<!--        xmlns:android="http://schemas.android.com/apk/res/android" />-->
+
+<!--    <FrameLayout-->
+<!--        android:id="@+id/fragmentContainer2"-->
+<!--        android:layout_weight="1"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_width="0dp"/>-->
+<!--</LinearLayout>-->
+
+<!--    Program 3-->
+<!--<LinearLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:gravity="center"-->
+<!--    android:orientation="vertical">-->
+<!--        <TextView-->
+<!--            android:text="Welcome, Effat!"-->
+<!--            android:textSize="20sp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/btnClick"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Click Me" />-->
+
+<!--</LinearLayout>-->
+
+<!--Program 4-->
+<!--<RelativeLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:padding="24dp">-->
+
+<!--    &lt;!&ndash; Title at Top Center &ndash;&gt;-->
+<!--    <TextView-->
+<!--        android:id="@+id/titleText"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Relative Layout Demo"-->
+<!--        android:textSize="22sp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="32dp"/>-->
+<!--        -->
+<!--        -->
+<!--        <TextView-->
+<!--            android:text="Welcome, Effat!"-->
+<!--            android:textSize="20sp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content" />-->
+
+<!--    &lt;!&ndash; Button below Title, Centered &ndash;&gt;-->
+<!--    <Button-->
+<!--        android:id="@+id/buttonClick"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Click Me"-->
+<!--        android:layout_below="@id/titleText"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="24dp"/>-->
+
+<!--    &lt;!&ndash; TextView below Button, Aligned to Start (Left) &ndash;&gt;-->
+<!--    <TextView-->
+<!--        android:id="@+id/outputText"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Output will appear here"-->
+<!--        android:layout_below="@id/buttonClick"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_marginTop="24dp"-->
+<!--        android:textColor="#333"-->
+<!--        android:textSize="16sp"/>-->
+<!--</RelativeLayout>-->
+
+<!--Program 5-->
+<!--<AbsoluteLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent">-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/label"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_x="100dp"-->
+<!--        android:layout_y="50dp"-->
+<!--        android:text="Hello from Absolute Layout"-->
+<!--        android:textSize="18sp" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_x="120dp"-->
+<!--        android:layout_y="120dp"-->
+<!--        android:text="Click Me" />-->
+<!--</AbsoluteLayout>-->
+
+
+<!--Program 6-->
+<!--<LinearLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:orientation="vertical"-->
+<!--    android:padding="16dp">-->
+
+<!--    <ListView-->
+<!--        android:id="@+id/listView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content" />-->
+<!--</LinearLayout>-->
+
+<!--Program 7-->
+<!--<TableLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:stretchColumns="1"-->
+<!--    android:padding="16dp">-->
+
+<!--    &lt;!&ndash; Row 1: Headers &ndash;&gt;-->
+<!--    <TableRow>-->
+<!--        <TextView-->
+<!--            android:text="Name"-->
+<!--            android:padding="8dp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="18sp" />-->
+
+<!--        <TextView-->
+<!--            android:text="Age"-->
+<!--            android:padding="8dp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="18sp" />-->
+<!--    </TableRow>-->
+
+<!--    &lt;!&ndash; Row 2 &ndash;&gt;-->
+<!--    <TableRow>-->
+<!--        <TextView-->
+<!--            android:text="Effat"-->
+<!--            android:padding="8dp" />-->
+
+<!--        <TextView-->
+<!--            android:text="21"-->
+<!--            android:padding="8dp" />-->
+
+<!--    </TableRow>-->
+
+<!--    &lt;!&ndash; Row 3 &ndash;&gt;-->
+<!--    <TableRow>-->
+<!--        <TextView-->
+<!--            android:text="Sakshi"-->
+<!--            android:padding="8dp" />-->
+
+<!--        <TextView-->
+<!--            android:text="21"-->
+<!--            android:padding="8dp" />-->
+<!--    </TableRow>-->
+
+<!--</TableLayout>-->
+
+
+<!--    Program 8-->
+<!--<GridLayout-->
+<!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:columnCount="2"-->
+<!--android:rowCount="2"-->
+<!--android:padding="24dp"-->
+<!--android:alignmentMode="alignMargins"-->
+<!--android:useDefaultMargins="true">-->
+
+<!--<Button-->
+<!--    android:text="1"-->
+<!--    android:layout_width="0dp"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_columnWeight="1"/>-->
+
+<!--<Button-->
+<!--    android:text="2"-->
+<!--    android:layout_width="0dp"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_columnWeight="1"/>-->
+
+<!--<Button-->
+<!--    android:text="3"-->
+<!--    android:layout_width="0dp"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_columnWeight="1"/>-->
+
+<!--<Button-->
+<!--    android:layout_width="0dp"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_row="1"-->
+<!--    android:layout_columnWeight="1"-->
+<!--    android:text="4" />-->
+<!--</GridLayout>-->
+
+
+<!--    Program 9-->
+<!--<LinearLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:orientation="vertical"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:padding="24dp">-->
+
+<!--    &lt;!&ndash; Button to toggle visibility &ndash;&gt;-->
+<!--    <Button-->
+<!--        android:id="@+id/btnToggle"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Toggle View" />-->
+
+<!--    &lt;!&ndash; FrameLayout to hold views &ndash;&gt;-->
+<!--    <FrameLayout-->
+<!--        android:id="@+id/frameLayout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:layout_marginTop="16dp">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/viewOne"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:text="This is View One"-->
+<!--            android:gravity="center"-->
+<!--            android:background="#AED6F1"-->
+<!--            android:textSize="20sp" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/viewTwo"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:text="This is View Two"-->
+<!--            android:gravity="center"-->
+<!--            android:background="#F9E79F"-->
+<!--            android:textSize="20sp"-->
+<!--            android:visibility="gone" />-->
+<!--    </FrameLayout>-->
+<!--</LinearLayout>-->
+
+
+<!--    Program 10-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnBrowser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Open Google in Browser" />
+
+    <Button
+        android:id="@+id/btnDialer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Open Phone Dialer" />
+
+    <Button
+        android:id="@+id/btnMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Open Google Maps" />
+</LinearLayout>
