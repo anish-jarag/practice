@@ -445,16 +445,152 @@
 
 
 <!--Program 14-->
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:padding="24dp"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<!--<LinearLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:orientation="vertical"-->
+<!--    android:padding="24dp"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent">-->
 
-    <Button
-        android:id="@+id/btnShowDialog"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Show Alert Dialog" />
-</LinearLayout>
+<!--    <Button-->
+<!--        android:id="@+id/btnShowDialog"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Show Alert Dialog" />-->
+<!--</LinearLayout>-->
+
+
+<!--Program 22-->
+<!--<LinearLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:orientation="vertical"-->
+<!--    android:padding="24dp"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent">-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/inputText"-->
+<!--        android:hint="Enter your message"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btnSave"-->
+<!--        android:text="Save to File"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="16dp" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/statusText"-->
+<!--        android:text=""-->
+<!--        android:textSize="16sp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="16dp" />-->
+<!--</LinearLayout>-->
+
+<!--Program 23-->
+<!--<LinearLayout-->
+<!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--android:orientation="vertical"-->
+<!--android:padding="24dp"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent">-->
+
+<!--<Button-->
+<!--    android:id="@+id/btnThread"-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:text="Start Background Task" />-->
+
+<!--<TextView-->
+<!--    android:id="@+id/threadStatus"-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:text=""-->
+<!--    android:layout_marginTop="16dp"-->
+<!--    android:textSize="16sp" />-->
+<!--</LinearLayout>-->
+
+
+<!--Program 24-->
+<!--<LinearLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:orientation="vertical"-->
+<!--    android:padding="24dp"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent">-->
+<!--<ProgressBar-->
+<!--android:id="@+id/progressBar"-->
+<!--style="?android:attr/progressBarStyleHorizontal"-->
+<!--android:max="100"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content" />-->
+
+<!--<TextView-->
+<!--android:id="@+id/txtPercent"-->
+<!--android:text="10%"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:layout_marginTop="8dp"/>-->
+<!--    </LinearLayout>-->
+
+
+<!--Program 25-->
+<!--<LinearLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:orientation="vertical"-->
+<!--    android:padding="24dp"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent">-->
+<!--    <RatingBar-->
+<!--        android:id="@+id/ratingBar"-->
+<!--        android:numStars="5"-->
+<!--        android:stepSize="1.0"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/txtRating"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Rating: 0" />-->
+<!--</LinearLayout>-->
+
+
+<!--Program 26-->
+<!--<LinearLayout-->
+<!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--android:orientation="vertical"-->
+<!--android:padding="24dp"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent">-->
+<!--    <SeekBar-->
+<!--        android:id="@+id/seekBar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/txtSeek"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Value: 0" />-->
+<!--</LinearLayout>-->
+
+
+<!--Program 27-->
+<!--<LinearLayout-->
+<!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--android:orientation="vertical"-->
+<!--android:padding="24dp"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent">-->
+<!--    <ToggleButton-->
+<!--        android:id="@+id/toggle"-->
+<!--        android:textOn="Wi-Fi ON"-->
+<!--        android:textOff="Wi-Fi OFF"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content" />-->
+
+<!--</LinearLayout>-->
