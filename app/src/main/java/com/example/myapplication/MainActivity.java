@@ -1,8 +1,9 @@
-package com.example.myapplication;
+package com.example.apl;
 
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.*;
@@ -13,6 +14,9 @@ import android.widget.ListView;
 import androidx.appcompat.app.AlertDialog;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import java.io.File;
+import java.io.FileOutputStream;
 
 public class MainActivity extends AppCompatActivity {
 //    program 9
@@ -32,6 +36,17 @@ public class MainActivity extends AppCompatActivity {
 
     Button btnShowDialog;
 
+//    program 22
+    EditText inputText;
+    Button btnSave;
+    TextView statusText;
+
+//    program 23
+Button btnThread;
+
+//  Program 24
+    ProgressBar progressBar;
+    TextView txtPercent;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -216,32 +231,142 @@ public class MainActivity extends AppCompatActivity {
 //        });
 
 //        Program 14
-        btnShowDialog = findViewById(R.id.btnShowDialog);
+//        btnShowDialog = findViewById(R.id.btnShowDialog);
+//
+//        btnShowDialog.setOnClickListener(v -> {
+//            AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+//            builder.setTitle("Confirm Action");
+//            builder.setMessage("Are you sure you want to proceed?");
+//            builder.setIcon(android.R.drawable.ic_dialog_alert);
+//
+//            // Positive Button
+//            builder.setPositiveButton("Yes", (dialog, which) ->
+//                    Toast.makeText(MainActivity.this, "You chose YES", Toast.LENGTH_SHORT).show()
+//            );
+//
+//            // Negative Button
+//            builder.setNegativeButton("No", (dialog, which) ->
+//                    Toast.makeText(MainActivity.this, "You chose NO", Toast.LENGTH_SHORT).show()
+//            );
+//
+//            // Neutral Button
+//            builder.setNeutralButton("Cancel", (dialog, which) ->
+//                    Toast.makeText(MainActivity.this, "Action Cancelled", Toast.LENGTH_SHORT).show()
+//            );
+//
+//            // Show dialog
+//            builder.show();
+//        });
 
-        btnShowDialog.setOnClickListener(v -> {
-            AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-            builder.setTitle("Confirm Action");
-            builder.setMessage("Are you sure you want to proceed?");
-            builder.setIcon(android.R.drawable.ic_dialog_alert);
 
-            // Positive Button
-            builder.setPositiveButton("Yes", (dialog, which) ->
-                    Toast.makeText(MainActivity.this, "You chose YES", Toast.LENGTH_SHORT).show()
-            );
 
-            // Negative Button
-            builder.setNegativeButton("No", (dialog, which) ->
-                    Toast.makeText(MainActivity.this, "You chose NO", Toast.LENGTH_SHORT).show()
-            );
 
-            // Neutral Button
-            builder.setNeutralButton("Cancel", (dialog, which) ->
-                    Toast.makeText(MainActivity.this, "Action Cancelled", Toast.LENGTH_SHORT).show()
-            );
+//        Program 22
+//        inputText = findViewById(R.id.inputText);
+//        btnSave = findViewById(R.id.btnSave);
+//        statusText = findViewById(R.id.statusText);
+//
+//        btnSave.setOnClickListener(v -> {
+//            String data = inputText.getText().toString().trim();
+//            if (data.isEmpty()) {
+//                Toast.makeText(this, "Enter something to save!", Toast.LENGTH_SHORT).show();
+//                return;
+//            }
+//
+//            try {
+//                File file = new File(getFilesDir(), "myfile.txt"); // Safe internal path
+//                FileOutputStream fos = new FileOutputStream(file);
+//                fos.write(data.getBytes());
+//                fos.close();
+//
+//                statusText.setText("Saved to: " + file.getAbsolutePath());
+//                Toast.makeText(this, "Data saved!", Toast.LENGTH_SHORT).show();
+//            } catch (Exception e) {
+//                Toast.makeText(this, "Error: " + e.getMessage(), Toast.LENGTH_LONG).show();
+//            }
+//        });
 
-            // Show dialog
-            builder.show();
-        });
+
+
+//        Program 23
+//        btnThread = findViewById(R.id.btnThread);
+//        threadStatus = findViewById(R.id.threadStatus);
+//
+//        btnThread.setOnClickListener(v -> {
+//            threadStatus.setText("Running...");
+//
+//            new Thread(() -> {
+//                for (int i = 1; i <= 5; i++) {
+//                    Log.d("ThreadExample", "Count: " + i);
+//                    try {
+//                        Thread.sleep(1000);
+//                    } catch (InterruptedException e) {
+//                        e.printStackTrace();
+//                    }
+//                }
+//
+//                runOnUiThread(() -> {
+//                    threadStatus.setText("Thread Finished!");
+//                    Toast.makeText(this, "Background Task Complete", Toast.LENGTH_SHORT).show();
+//                });
+//            }).start();
+//        });
+
+//        Program 24
+//            progressBar = findViewById(R.id.progressBar);
+//            txtPercent = findViewById(R.id.txtPercent);
+//
+//            new Thread(() -> {
+//                for (int i = 0; i <= 100; i++) {
+//                    int finalI = i;
+//                    runOnUiThread(() -> {
+//                        progressBar.setProgress(finalI);
+//                        txtPercent.setText(finalI + "%");
+//                    });
+//                    try {
+//                        Thread.sleep(50); // 50ms delay
+//                    } catch (InterruptedException e) {
+//                        e.printStackTrace();
+//                    }
+//                }
+//            }).start();
+
+//        Program 25
+//        RatingBar ratingBar = findViewById(R.id.ratingBar);
+//        TextView txtRating = findViewById(R.id.txtRating);
+//
+//        ratingBar.setOnRatingBarChangeListener((bar, rating, fromUser) -> {
+//            txtRating.setText("Rating: " + rating);
+//        });
+
+
+//        Program 26
+//        SeekBar seekBar = findViewById(R.id.seekBar);
+//        TextView txtSeek = findViewById(R.id.txtSeek);
+//
+//        seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+//            @Override
+//            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+//                txtSeek.setText("Value: " + progress);
+//            }
+//
+//            @Override
+//            public void onStartTrackingTouch(SeekBar seekBar) { }
+//
+//            @Override
+//            public void onStopTrackingTouch(SeekBar seekBar) { }
+//        });
+
+//        Program 27
+//        ToggleButton toggle = findViewById(R.id.toggle);
+//
+//        toggle.setOnCheckedChangeListener((buttonView, isChecked) -> {
+//            if (isChecked) {
+//                Toast.makeText(this, "Wi-Fi Enabled", Toast.LENGTH_SHORT).show();
+//            } else {
+//                Toast.makeText(this, "Wi-Fi Disabled", Toast.LENGTH_SHORT).show();
+//            }
+//        });
 
     }
 }
